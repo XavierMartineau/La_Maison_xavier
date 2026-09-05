@@ -2,7 +2,7 @@
 
 ## À propos du projet
 
-**La Maison** est un jeu interactif développé en HTML et CSS.  
+**La Maison** est un jeu interactif développé en HTML,CSS et JS
 Le joueur explore une vieille maison mystérieuse en faisant des choix à chaque étape. Chaque page correspond à une pièce ou un étage de la maison, avec des images et des boutons pour naviguer.
 
 ---
@@ -11,7 +11,7 @@ Le joueur explore une vieille maison mystérieuse en faisant des choix à chaque
 
 1. **Ouvrir le jeu**
 
-   - Lancez le fichier `index.html` situé dans le dossier `docs` dans votre navigateur.
+   - Cliquer sur le lien dans le menu a droite du GITHUB  
 
 2. **Naviguer dans la maison**
 
