@@ -191,3 +191,20 @@ button:focus {
     padding: 0.5rem 0;
   }
 }
+/* Bouton Mort — toujours rouge */
+.Boutton-mort {
+  background: #c40000 !important; /* Rouge intense */
+  color: #fff !important;
+  border: 2px solid #ff4d4d !important;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6) !important;
+}
+
+.Boutton-mort:hover {
+  background: #e00000 !important; /* Rouge plus vif */
+  transform: scale(1.05);
+}
+
+.Boutton-mort:active {
+  background: #8b0000 !important; /* Rouge foncé */
+  transform: scale(0.95);
+}
