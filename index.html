@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choisir la langue</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        Fr: Choisissez votre langue <br />
+        En: Choose your language
+      </h1>
+    </header>
+
+    <main>
+      <div class="lang-container">
+        <button class="lang-btn">
+          <a
+            href="./jeu_accueil.html"
+            onclick="localStorage.setItem('lang', 'fr')"
+          >
+            Français
+          </a>
+        </button>
+
+        <button class="lang-btn">
+          <a
+            href="./jeu_accueil.html"
+            onclick="localStorage.setItem('lang', 'en')"
+          >
+            English
+          </a>
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer_info">
+        © 2024–2026 Projet "La Maison". Xavier Martineau
+      </p>
+    </footer>
+  </body>
+</html>
