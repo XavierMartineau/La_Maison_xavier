@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chambre</title>
+    <title data-lang="chambreTitle">Chambre</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>La Chambre</h1>
+      <h1 data-lang="chambreTitle">La Chambre</h1>
     </header>
 
     <!-- Main -->
@@ -23,43 +23,55 @@
 
         <!-- Texte -->
         <div class="text-box">
-          <h2>Vous arrivez dans la chambre…</h2>
+          <h2 data-lang="chambreIntro">Vous arrivez dans la chambre…</h2>
+
           <p>
-            Vous observez la pièce et remarquez deux sorties possibles :
+            <span data-lang="chambreText"
+              >Vous observez la pièce et remarquez deux sorties possibles
+              :</span
+            >
             <br /><br />
-            • Une <span>fenêtre équipée d’une manivelle</span>
+            •
+            <span data-lang="chambreChoice1"
+              >Une fenêtre équipée d’une manivelle</span
+            >
             <br />
-            • Une <span>étagère où semble se trouver une clé</span> <br /><br />
-            Quel chemin choisissez-vous ?
+            •
+            <span data-lang="chambreChoice2"
+              >Une étagère où semble se trouver une clé</span
+            >
+            <br /><br />
+            <span data-lang="chambreQuestion"
+              >Quel chemin choisissez-vous ?</span
+            >
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer (format mémorisé) -->
+    <!-- Footer -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_etagere.html">Étagère</a>
+              <a href="./jeu_etagere.html" data-lang="btnEtagere">Étagère</a>
             </button>
           </td>
 
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_fenetre.html">Fenêtre</a>
+              <a href="./jeu_fenetre.html" data-lang="btnFenetre">Fenêtre</a>
             </button>
           </td>
         </tr>
       </table>
 
-      <p class="footer_info">
+      <p class="footer_info" data-lang="footerInfoChambre">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
 
-    <!-- Script -->
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>

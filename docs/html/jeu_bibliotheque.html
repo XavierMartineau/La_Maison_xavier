@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliothèque</title>
+    <title data-lang="bibliTitle">Bibliothèque</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>La Bibliothèque</h1>
+      <h1 data-lang="bibliTitle">La Bibliothèque</h1>
     </header>
 
     <!-- Main -->
@@ -23,11 +23,17 @@
 
         <!-- Texte -->
         <div class="text-box">
-          <h2>Vous arrivez dans la bibliothèque…</h2>
+          <h2 data-lang="bibliIntro">Vous arrivez dans la bibliothèque…</h2>
+
           <p>
-            Un bruit étrange résonne entre les étagères. Vous avez deux choix :
-            <span>Vous approcher pour découvrir l’origine du bruit</span> ou
-            <span>Retourner à l’étage</span>.
+            <span data-lang="bibliText"
+              >Un bruit étrange résonne entre les étagères. Vous avez deux choix
+              :</span
+            ><br />
+            <span data-lang="bibliChoice1"
+              >Vous approcher pour découvrir l’origine du bruit</span
+            >
+            ou <span data-lang="bibliChoice2">Retourner à l’étage</span>.
           </p>
         </div>
       </div>
@@ -39,22 +45,23 @@
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="jeu_etage.html">Vers l'Étage</a>
+              <a href="jeu_etage.html" data-lang="btnEtage">Vers l'Étage</a>
             </button>
           </td>
 
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_bruit.html">Vers le Bruit</a>
+              <a href="./jeu_bruit.html" data-lang="btnBruit">Vers le Bruit</a>
             </button>
           </td>
         </tr>
       </table>
 
-      <p class="footer_info">
+      <p class="footer_info" data-lang="footerInfoBibli">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>

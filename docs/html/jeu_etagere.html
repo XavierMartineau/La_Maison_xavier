@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Étagère</title>
+    <title data-lang="etagereTitle">Étagère</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>Étagère</h1>
+      <h1 data-lang="etagereTitle">Étagère</h1>
     </header>
 
     <!-- Main -->
@@ -23,39 +23,56 @@
 
         <!-- Texte -->
         <div class="text-box">
-          <h2>Le sol se brise sous votre poids…</h2>
+          <h2 data-lang="etagereIntro">Le sol se brise sous votre poids…</h2>
+
           <p>
-            Vous chutez brutalement et tombez dans le sous‑sol, la jambe en sang
-            et ouverte.
+            <span data-lang="etagereText">
+              Vous chutez brutalement et tombez dans le sous‑sol, la jambe en
+              sang et ouverte.
+            </span>
             <br /><br />
-            Devant vous, deux chemins possibles :
+
+            <span data-lang="etagereChoicesIntro"
+              >Devant vous, deux chemins possibles :</span
+            >
             <br /><br />
-            • La <span>salle de lavage</span>
+
+            • <span data-lang="etagereChoice1">La salle de lavage</span>
             <br />
-            • La <span>salle électrique</span> <br /><br />
-            Quel chemin choisissez-vous ?
+            • <span data-lang="etagereChoice2">La salle électrique</span>
+            <br /><br />
+
+            <span data-lang="etagereQuestion"
+              >Quel chemin choisissez-vous ?</span
+            >
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer avec boutons (TON FORMAT OFFICIEL) -->
+    <!-- Footer -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_lavage.html">Salle de Lavage</a>
+              <a href="./jeu_lavage.html" data-lang="btnLavage"
+                >Salle de Lavage</a
+              >
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_electrique.html">Salle électrique</a>
+              <a href="./jeu_electrique.html" data-lang="btnElectrique"
+                >Salle électrique</a
+              >
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoEtagere">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>

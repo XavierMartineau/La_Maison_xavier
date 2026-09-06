@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fin</title>
+    <title data-lang="finTitle">Fin</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <header>
-      <h1>Sortie</h1>
+      <h1 data-lang="finTitle">Sortie</h1>
     </header>
 
     <main>
@@ -19,16 +19,12 @@
         </div>
 
         <div class="text-box">
-          <h2>Bravo !! Vous avez trouvé la clé et vous sortez dehors !</h2>
-          <p>
-            Vous retrouvez vos amis et vos parents, accompagnés de la police,
-            qui vous disent que vous êtes resté <span>un mois entier</span> dans
-            cette maison. <br /><br />
-            Vous vous réveillez en sursaut chez vous, vous demandant si tout
-            cela était réel ou non… <br /><br />
-            Vous regardez votre jambe — et vous avez encore le
-            <span>bandage</span> que vous aviez mis. <br /><br />
-            <strong>Était-ce un rêve… ou la réalité...?</strong>
+          <h2 data-lang="finIntro">
+            Bravo !! Vous avez trouvé la clé et vous sortez dehors !
+          </h2>
+
+          <p data-lang="finText">
+            Vous retrouvez vos amis et vos parents, accompagnés de la police...
           </p>
         </div>
       </div>
@@ -39,18 +35,19 @@
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_accueil.html">Rejouer</a>
+              <a href="./jeu_accueil.html" data-lang="btnRejouer">Rejouer</a>
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="./credit.html">Crédits</a>
+              <a href="./credit.html" data-lang="btnCredits">Crédits</a>
             </button>
           </td>
         </tr>
       </table>
 
-      <p class="footer_info">
+      <p class="footer_info" data-lang="footerInfoFin">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>

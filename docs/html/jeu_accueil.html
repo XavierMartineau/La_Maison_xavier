@@ -3,65 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Maison</title>
+    <title data-lang="accueilTitle">Accueil</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
   <body>
-    <!-- En-tête -->
     <header>
-      <h1>Accueil</h1>
+      <h1 data-lang="accueilTitle">Accueil</h1>
     </header>
 
-    <!-- Contenu principal avec image intégrée -->
     <main>
       <div class="main-container">
-        <!-- Petite boîte pour l'image -->
         <div class="image-box">
           <img src="../images/01.jpg" alt="Image 01" />
         </div>
 
-        <!-- Texte à côté -->
         <div class="text-box">
-          <h2>Histoire</h2>
-          <p>
-            Un groupe de jeunes passe devant une vieille maison délabrée. L’un
-            d’eux met son ami au défi en lui disant :
-            <em>« Si tu es vraiment courageux, entre dans cette maison. »</em>
-            L’ami accepte et franchit la porte, mais ses camarades la referment
-            aussitôt derrière lui.
+          <h2 data-lang="accueilStoryTitle">Histoire</h2>
+
+          <p data-lang="accueilStoryP1">
+            Un groupe de jeunes passe devant une vieille maison délabrée...
           </p>
-          <p>
-            Son objectif est clair : trouver la clé cachée dans cette demeure.
-            Dès le début de son exploration, deux choix s’offrent à lui :
+
+          <p data-lang="accueilStoryP2">
+            Son objectif est clair : trouver la clé cachée...
           </p>
+
           <ul>
-            <li>Monter à l’étage pour découvrir ce qui s’y cache ;</li>
-            <li>Descendre au sous-sol et affronter l’inconnu.</li>
+            <li data-lang="accueilChoice1">Monter à l’étage...</li>
+            <li data-lang="accueilChoice2">Descendre au sous-sol...</li>
           </ul>
         </div>
       </div>
     </main>
 
-    <!-- Pied de page -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="jeu_etage.html">Vers l'Étage</a>
+              <a data-lang="btnEtage" href="jeu_etage.html">Vers l'Étage</a>
             </button>
           </td>
           <td>
             <button class="Boutton-2">
-              <a href="jeu_sous_sol.html">Vers le Sous-sol</a>
+              <a data-lang="btnSousSol" href="jeu_sous_sol.html"
+                >Vers le Sous-sol</a
+              >
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfo">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>

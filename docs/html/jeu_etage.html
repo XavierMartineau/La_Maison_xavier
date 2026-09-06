@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Étage</title>
+    <title data-lang="etageTitle">Étage</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>L'Étage</h1>
+      <h1 data-lang="etageTitle">L'Étage</h1>
     </header>
 
     <!-- Main avec image et texte -->
@@ -23,33 +23,43 @@
 
         <!-- Texte à côté -->
         <div class="text-box">
-          <h2>Vous avez choisi d'aller à l’étage</h2>
+          <h2 data-lang="etageIntro">Vous avez choisi d'aller à l’étage</h2>
+
           <p>
-            Vous regardez autour de vous et voyez deux chemins :
-            <span>La Bibliothèque sombre</span> ou <span>la Chambre</span>.
+            <span data-lang="etageText"
+              >Vous regardez autour de vous et voyez deux chemins :</span
+            >
+            <span data-lang="etageChoice1">La Bibliothèque sombre</span>
+            ou
+            <span data-lang="etageChoice2">La Chambre</span>.
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer avec boutons (TON FORMAT OFFICIEL) -->
+    <!-- Footer avec boutons -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_bibliotheque.html">Vers la Bibliothèque</a>
+              <a href="./jeu_bibliotheque.html" data-lang="btnBibli"
+                >Vers la Bibliothèque</a
+              >
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_chambre.html">Vers la Chambre</a>
+              <a href="./jeu_chambre.html" data-lang="btnChambre"
+                >Vers la Chambre</a
+              >
             </button>
           </td>
         </tr>
       </table>
 
-      <p class="footer_info">
+      <p class="footer_info" data-lang="footerInfoEtage">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>

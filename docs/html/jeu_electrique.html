@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salle Électrique</title>
-    <!-- CSS principal -->
+    <title data-lang="elecTitle">Salle Électrique</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
-      <h1>Salle Électrique</h1>
+      <h1 data-lang="elecTitle">Salle Électrique</h1>
     </header>
 
     <main>
@@ -20,14 +20,19 @@
         </div>
 
         <div class="text-box">
-          <h2>Vous arrivez à la salle électrique</h2>
-          <p>Vous voyez deux sorties possibles :</p>
+          <h2 data-lang="elecIntro">Vous arrivez à la salle électrique</h2>
+
+          <p data-lang="elecText">Vous voyez deux sorties possibles :</p>
+
           <ul>
-            <li>
+            <li data-lang="elecChoice1">
               Vous accédez à une génératrice et coupez le fil afin de couper le
               courant du bâtiment ;
             </li>
-            <li>Vous ouvrez le placard rempli de bestioles.</li>
+
+            <li data-lang="elecChoice2">
+              Vous ouvrez le placard rempli de bestioles.
+            </li>
           </ul>
         </div>
       </div>
@@ -38,20 +43,25 @@
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_generatrice.html">Génératrice</a>
+              <a href="./jeu_generatrice.html" data-lang="btnGeneratrice"
+                >Génératrice</a
+              >
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_placard.html">Placard</a>
+              <a href="./jeu_placard.html" data-lang="btnPlacard">Placard</a>
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoElec">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>

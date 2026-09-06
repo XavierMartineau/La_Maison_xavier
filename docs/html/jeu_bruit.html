@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Bruit</title>
+    <title data-lang="bruitTitle">Le Bruit</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>Le Bruit</h1>
+      <h1 data-lang="bruitTitle">Le Bruit</h1>
     </header>
 
     <!-- Main -->
@@ -23,15 +23,10 @@
 
         <!-- Texte -->
         <div class="text-box">
-          <h2>Un livre vous tombe sur la tête…</h2>
-          <p>
-            Vous vous approchez pour comprendre l’origine du bruit, mais
-            soudain, un livre se détache d’une étagère et vous frappe
-            violemment. Vous perdez connaissance…
-            <br /><br />
-            Vous tombez dans le coma et mourez 💀
-            <br /><br />
-            Retournez à l’accueil et réessayez.
+          <h2 data-lang="bruitIntro">Un livre vous tombe sur la tête…</h2>
+
+          <p data-lang="bruitText">
+            Vous vous approchez pour comprendre l’origine du bruit...
           </p>
         </div>
       </div>
@@ -43,16 +38,17 @@
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_mort.html">Vers la Mort</a>
+              <a href="./jeu_mort.html" data-lang="btnMort">Vers la Mort</a>
             </button>
           </td>
         </tr>
       </table>
 
-      <p class="footer_info">
+      <p class="footer_info" data-lang="footerInfoBruit">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>
