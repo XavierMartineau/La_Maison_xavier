@@ -28,14 +28,12 @@
     "bibliText": "Un bruit étrange résonne entre les étagères. Vous avez deux choix :",
     "bibliChoice1": "Vous approcher pour découvrir l’origine du bruit",
     "bibliChoice2": "Retourner à l’étage",
-    "btnEtage": "Vers l'Étage",
     "btnBruit": "Vers le Bruit",
     "footerInfoBibli": "© 2024–2026 Projet \"La Maison\". Réalisé par Xavier Martineau.",
 
     "bruitTitle": "Le Bruit",
     "bruitIntro": "Un livre vous tombe sur la tête…",
     "bruitText": "Vous vous approchez pour comprendre l’origine du bruit, mais soudain, un livre se détache d’une étagère et vous frappe violemment. Vous perdez connaissance… Vous tombez dans le coma et mourez 💀 Retournez à l’accueil et réessayez.",
-    "btnMort": "Vers la Mort",
     "footerInfoBruit": "© 2024–2026 Projet \"La Maison\". Réalisé par Xavier Martineau.",
 
     "chambreTitle": "La Chambre",
@@ -164,7 +162,7 @@
     "bibliText": "A strange noise echoes between the shelves. You have two choices:",
     "bibliChoice1": "Approach to discover the source of the noise",
     "bibliChoice2": "Return upstairs",
-    "btnEtage": "Go Upstairs",
+
     "btnBruit": "Go Toward the Noise",
     "footerInfoBibli": "© 2024–2026 Project \"The House\". Created by Xavier Martineau.",
 
