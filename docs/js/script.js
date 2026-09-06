@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.color = "rgba(255,255,255,0.9)";
   });
 
-  // Harmoniser boutons
-  document.querySelectorAll("button").forEach((btn) => {
+  // Harmoniser boutons (SAUF Boutton-mort)
+  document.querySelectorAll("button:not(.Boutton-mort)").forEach((btn) => {
     btn.style.background = randomGradient;
     btn.style.color = "#fff";
     btn.style.border = "none";
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.style.transition = "all 0.3s ease";
   });
 
-  // Effet hover dynamique
-  document.querySelectorAll("button").forEach((btn) => {
+  // Effet hover dynamique (SAUF Boutton-mort)
+  document.querySelectorAll("button:not(.Boutton-mort)").forEach((btn) => {
     btn.addEventListener("mouseenter", () => {
       btn.style.transform = "scale(1.05)";
       btn.style.boxShadow = "0 6px 16px rgba(0,0,0,0.5)";
@@ -55,4 +55,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-/* --- IGNORE --- */
