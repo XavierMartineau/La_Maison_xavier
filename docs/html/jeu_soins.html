@@ -2,15 +2,13 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salle de soins</title>
-    <!-- CSS principal -->
+    <title data-lang="soinsTitle">Soins</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
+
   <body>
-    <!-- Header -->
     <header>
-      <h1>Soins</h1>
+      <h1 data-lang="soinsTitle">Soins</h1>
     </header>
 
     <main>
@@ -20,10 +18,10 @@
         </div>
 
         <div class="text-box">
-          <h2>Soins</h2>
-          <p>
-            Tu te jettes contre la vitre. Un fragment te blesse au cœur. Tu
-            t’effondres — c’est fini.
+          <h2 data-lang="soinsIntro">Soins</h2>
+
+          <p data-lang="soinsText">
+            Tu te jettes contre la vitre. Un fragment te blesse au cœur...
           </p>
         </div>
       </div>
@@ -34,15 +32,17 @@
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="jeu_mort.html">Vers la Mort</a>
+              <a href="jeu_mort.html" data-lang="btnMort">Vers la Mort</a>
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoSoins">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/script.js"></script>
     <script src="../js/translate.js"></script>
   </body>

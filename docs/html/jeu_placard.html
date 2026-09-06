@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Le Placard</title>
+    <title data-lang="placardTitle">Le Placard</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>Le Placard</h1>
+      <h1 data-lang="placardTitle">Le Placard</h1>
     </header>
 
     <!-- Main -->
@@ -23,32 +23,28 @@
 
         <!-- Texte -->
         <div class="text-box">
-          <h2>Vous ouvrez le placard…</h2>
-          <p>
-            Vous décidez d’aller vers la porte, mais elle est barrée. Un placard
-            se trouve à côté : vous l’ouvrez et découvrez une **clé**, ainsi que
-            des **bandages**.
-            <br /><br />
-            Vous réalisez que cette clé ouvre la **porte de sortie**.
-            <br /><br />
-            Ouvrez cette porte… et sortez enfin de cette Maison !
+          <h2 data-lang="placardIntro">Vous ouvrez le placard…</h2>
+
+          <p data-lang="placardText">
+            Vous décidez d’aller vers la porte, mais elle est barrée...
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer avec boutons (TON FORMAT OFFICIEL) -->
+    <!-- Footer -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_fin.html">Vers la sortie</a>
+              <a href="./jeu_fin.html" data-lang="btnSortie">Vers la sortie</a>
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoPlacard">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>

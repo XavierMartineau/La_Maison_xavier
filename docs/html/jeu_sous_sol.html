@@ -3,57 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sous-Sol</title>
+    <title data-lang="soussolTitle">Sous-Sol</title>
     <link rel="stylesheet" href="../css/jeu.css" />
-    <!-- Script chargé après l'analyse du DOM -->
     <script src="../js/script.js" defer></script>
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>Sous-Sol</h1>
+      <h1 data-lang="soussolTitle">Sous-Sol</h1>
     </header>
 
-    <!-- Main avec image et texte -->
+    <!-- Main -->
     <main>
       <div class="main-container">
-        <!-- Boîte pour l'image -->
         <div class="image-box">
           <img src="../images/13.jpg" alt="Sous-sol" />
         </div>
 
-        <!-- Texte à côté -->
         <div class="text-box">
-          <h2>Vous arrivez au sous-sol</h2>
+          <h2 data-lang="soussolIntro">Vous arrivez au sous-sol</h2>
+
           <p>
-            Vous voyez deux chemins possibles :
-            <span>Salle de lavage</span> ou <span>Salle électrique</span>.
+            <span data-lang="soussolText">
+              Vous voyez deux chemins possibles : Salle de lavage ou Salle
+              électrique.
+            </span>
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer avec boutons -->
+    <!-- Footer -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="jeu_lavage.html">Salle de Lavage</a>
+              <a href="jeu_lavage.html" data-lang="btnLavage"
+                >Salle de Lavage</a
+              >
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="jeu_electrique.html">Salle Électrique</a>
+              <a href="jeu_electrique.html" data-lang="btnElectrique"
+                >Salle Électrique</a
+              >
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoSoussol">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
+
     <script src="../js/translate.js"></script>
     <script src="../js/script.js"></script>
   </body>

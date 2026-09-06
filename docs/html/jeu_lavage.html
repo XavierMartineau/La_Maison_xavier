@@ -3,52 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salle de Lavage</title>
+    <title data-lang="lavageTitle">Salle de Lavage</title>
     <link rel="stylesheet" href="../css/jeu.css" />
   </head>
 
   <body>
     <!-- Header -->
     <header>
-      <h1>Salle de Lavage</h1>
+      <h1 data-lang="lavageTitle">Salle de Lavage</h1>
     </header>
 
     <!-- Main avec image et texte -->
     <main>
       <div class="main-container">
-        <!-- Petite boîte pour l'image -->
         <div class="image-box">
           <img src="../images/07.jpg" alt="Salle de lavage" />
         </div>
 
-        <!-- Texte à côté -->
         <div class="text-box">
-          <h2>Vous arrivez à la Salle de Lavage</h2>
-          <p>
-            Vous voyez une vitre avec derrière un <span>kit de soins</span> OU
-            un <span>tunnel</span> sur le côté d'une laveuse.
+          <h2 data-lang="lavageIntro">Vous arrivez à la Salle de Lavage</h2>
+
+          <p data-lang="lavageText">
+            Vous voyez une vitre avec derrière un kit de soins OU un tunnel sur
+            le côté d'une laveuse.
           </p>
         </div>
       </div>
     </main>
 
-    <!-- Footer avec boutons (TON FORMAT OFFICIEL) -->
+    <!-- Footer -->
     <footer>
       <table>
         <tr>
           <td>
             <button class="Boutton-1">
-              <a href="./jeu_soins.html">Soins</a>
+              <a href="./jeu_soins.html" data-lang="btnSoins">Soins</a>
             </button>
           </td>
+
           <td>
             <button class="Boutton-2">
-              <a href="./jeu_tunnel.html">Tunnel</a>
+              <a href="./jeu_tunnel.html" data-lang="btnTunnel">Tunnel</a>
             </button>
           </td>
         </tr>
       </table>
-      <p class="footer_info">
+
+      <p class="footer_info" data-lang="footerInfoLavage">
         © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
       </p>
     </footer>
