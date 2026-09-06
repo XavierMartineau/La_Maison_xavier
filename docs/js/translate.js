@@ -4,7 +4,7 @@ let currentLang = localStorage.getItem("lang") || "fr";
 // Charge le fichier JSON
 async function loadLang() {
   try {
-    const res = await fetch("./js/lang.json"); // CORRECTION ICI
+    const res = await fetch("../js/lang.json"); // CORRECTION ICI
     const data = await res.json();
     applyLang(data[currentLang]);
   } catch (error) {
