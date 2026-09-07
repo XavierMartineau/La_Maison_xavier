@@ -32,6 +32,18 @@ if (langToggle) {
     loadLang();
   });
 }
+async function loadLang() {
+  try {
+    const res = await fetch("../js/lang.json");
+    console.log("URL utilisée :", res.url);
+    console.log("Statut :", res.status);
+    const data = await res.json();
+    console.log("Langues disponibles :", Object.keys(data));
+    applyLang(data[currentLang]);
+  } catch (error) {
+    console.error("Erreur de chargement du fichier de langue :", error);
+  }
+}
 
 // Lance la traduction au chargement
 loadLang();
