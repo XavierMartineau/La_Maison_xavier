@@ -4,10 +4,11 @@ let currentLang = localStorage.getItem("lang") || "fr";
 // Détecte automatiquement le bon chemin vers lang.json
 function getLangPath() {
   // Cherche le fichier dans le dossier js, peu importe la profondeur
-  const depth = window.location.pathname.split("/").length - 1;
+  const isGamePage = window.location.pathname.toLowerCase().includes("/html/");
+  // Utilise un chemin relatif adapté aux pages de jeu.
   // Si la page est dans docs/html → ../js/lang.json
   // Si elle est dans docs/ → ./js/lang.json
-  return depth > 3 ? "../../js/lang.json" : "../js/lang.json";
+  return isGamePage ? "../js/lang.json" : "./js/lang.json";
 }
 
 // Charge le fichier JSON

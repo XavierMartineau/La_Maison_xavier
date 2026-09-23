@@ -3,46 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Choisir la langue</title>
+    <meta name="theme-color" content="#101820" />
+    <meta
+      name="description"
+      content="Choisissez votre langue pour entrer dans La Maison."
+    />
+    <title>La Maison | Choisir la langue</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>
-        Fr: Choisissez votre langue <br />
-        En: Choose your language
-      </h1>
-    </header>
+    <main class="language-page">
+      <header class="hero">
+        <p class="eyebrow">Une histoire interactive</p>
+        <h1>La Maison</h1>
+        <p class="hero-copy">
+          Une porte. Deux langues. Une maison pleine de secrets.
+        </p>
+      </header>
 
-    <main>
-      <div class="lang-container">
-        <button class="lang-btn">
+      <section class="language-choice" aria-labelledby="language-title">
+        <p class="section-label" id="language-title">Choisissez votre langue</p>
+        <div class="lang-container">
           <a
+            class="lang-btn"
             href="./html/accueil.html"
             onclick="localStorage.setItem('lang', 'fr')"
           >
-            Français
+            <span class="lang-code">FR</span>
+            <span class="lang-name">Français</span>
+            <span class="lang-arrow" aria-hidden="true">&rarr;</span>
           </a>
-        </button>
 
-        <button class="lang-btn">
           <a
+            class="lang-btn"
             href="./html/accueil.html"
             onclick="localStorage.setItem('lang', 'en')"
           >
-            English
+            <span class="lang-code">EN</span>
+            <span class="lang-name">English</span>
+            <span class="lang-arrow" aria-hidden="true">&rarr;</span>
           </a>
-        </button>
-      </div>
+        </div>
+      </section>
+
+      <p class="hint">Votre aventure commence ici</p>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p class="footer_info">
         © 2024–2026 Projet "La Maison". Xavier Martineau
       </p>
     </footer>
-    <script src="../js/script.js"></script>
-    <script src="../js/translate.js"></script>
   </body>
 </html>

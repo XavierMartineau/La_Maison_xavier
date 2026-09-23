@@ -15,6 +15,7 @@
     "homeContextP1": "Ce projet a été créé dans le cadre d’un exercice de conception multimédia dans un cours au Cégep Montmorency dans une technique d'intégration multimédia. L’objectif est de plonger le joueur dans une atmosphère mystérieuse où ses choix détermineront la suite de l’histoire. Créé au départ en 2024, le projet a été développé par Xavier, un étudiant passionné par la création d’expériences interactives. Le jeu se déroule dans une maison mystérieuse où chaque décision du joueur influence le déroulement de l’histoire. Il a été par la suite modifié et amélioré en 2026.",
     "homeContextP2": "La page d’accueil vous présente le contexte général et vous permet de lancer la partie.",
     "homeStartBtn": "Démarrer la partie",
+    "btnDepart": "Retour au départ",
     "footerInfo2": "© 2025 Projet \"La Maison\". Réalisé par Xavier.",
 
     "creditsTitle": "Crédits",
@@ -149,6 +150,7 @@
     "homeContextP1": "This project was created as part of a multimedia design exercise in a course at Cégep Montmorency in a multimedia integration program. The goal is to immerse the player in a mysterious atmosphere where their choices determine the progression of the story. Originally created in 2024, the project was developed by Xavier, a student passionate about creating interactive experiences. The game takes place in a mysterious house where every decision influences the unfolding of the story. It was later modified and improved in 2026.",
     "homeContextP2": "The home page presents the general context and allows you to start the game.",
     "homeStartBtn": "Start the game",
+    "btnDepart": "Back to start",
     "footerInfo2": "© 2025 Project \"The House\". Created by Xavier.",
 
     "creditsTitle": "Credits",
