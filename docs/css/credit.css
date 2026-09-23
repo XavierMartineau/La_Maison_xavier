@@ -67,7 +67,10 @@ body::after {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-decoration: none;
-  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .top-return span {
