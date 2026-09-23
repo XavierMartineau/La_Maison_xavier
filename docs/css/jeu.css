@@ -6,7 +6,7 @@
   --line: rgba(190, 220, 214, 0.2);
   --accent: #63d6bc;
   --accent-soft: #baf4e5;
-  --story-title: #f2d8c2;
+  --story-title: #8fc9e8;
   --choice-two: #e58a73;
   --choice-two-soft: #ffc0ae;
   --danger: #e8796b;
@@ -353,6 +353,27 @@ button a::after {
   content: "→";
   font-size: 1.1em;
   transition: transform 180ms ease;
+}
+
+.Boutton-1 a::before {
+  width: auto;
+  height: auto;
+  margin-right: 10px;
+  border: 0;
+  content: "←";
+  font-size: 1.1em;
+}
+
+.Boutton-1 a::after {
+  display: inline-grid;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  place-items: center;
+  border: 1px solid currentColor;
+  content: "1";
+  font-size: 0.78rem;
+  letter-spacing: 0;
 }
 
 button:hover,
