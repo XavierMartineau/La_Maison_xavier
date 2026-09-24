@@ -97,7 +97,9 @@
 
     "lavageTitle": "Salle de Lavage",
     "lavageIntro": "Vous arrivez à la Salle de Lavage",
-    "lavageText": "Vous voyez une vitre avec derrière un kit de soins OU un tunnel sur le côté d'une laveuse.",
+    "lavageText": "Vous voyez deux chemins possibles :",
+    "lavageChoice1": "Une vitre avec un kit de soins derrière",
+    "lavageChoice2": "Un tunnel sur le côté de la laveuse",
     "btnSoins": "Soins",
     "btnTunnel": "Tunnel",
     "footerInfoLavage": "© 2024–2026 Projet \"La Maison\". Réalisé par Xavier Martineau.",
@@ -236,7 +238,9 @@
 
     "lavageTitle": "Laundry Room",
     "lavageIntro": "You arrive in the Laundry Room",
-    "lavageText": "You see a window with a medical kit behind it OR a tunnel on the side of a washing machine.",
+    "lavageText": "You see two possible paths:",
+    "lavageChoice1": "A window with a medical kit behind it",
+    "lavageChoice2": "A tunnel on the side of the washing machine",
     "btnSoins": "Medical Kit",
     "btnTunnel": "Tunnel",
     "footerInfoLavage": "© 2024–2026 Project \"The House\". Created by Xavier Martineau.",
