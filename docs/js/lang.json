@@ -122,7 +122,9 @@
 
     "soussolTitle": "Sous-Sol",
     "soussolIntro": "Vous arrivez au sous-sol",
-    "soussolText": "Vous voyez deux chemins possibles : Salle de lavage ou Salle électrique.",
+    "soussolText": "Vous voyez deux chemins possibles :",
+    "soussolChoice1": "Salle de lavage",
+    "soussolChoice2": "Salle électrique",
     "btnLavageSoussol": "Salle de Lavage",
     "btnElectriqueSoussol": "Salle Électrique",
     "footerInfoSoussol": "© 2024–2026 Projet \"La Maison\". Réalisé par Xavier Martineau.",
@@ -259,7 +261,9 @@
 
     "soussolTitle": "Basement",
     "soussolIntro": "You arrive in the basement",
-    "soussolText": "You see two possible paths: Laundry Room or Electric Room.",
+    "soussolText": "You see two possible paths:",
+    "soussolChoice1": "Laundry Room",
+    "soussolChoice2": "Electric Room",
     "btnLavageSoussol": "Laundry Room",
     "btnElectriqueSoussol": "Electric Room",
     "footerInfoSoussol": "© 2024–2026 Project \"The House\". Created by Xavier Martineau.",

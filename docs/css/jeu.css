@@ -347,7 +347,8 @@ button a {
   animation-name: button-hint-two;
 }
 
-button a::after {
+.Boutton-1 a::after,
+.Boutton-2 a::after {
   display: inline-block;
   margin-left: 10px;
   content: "→";
@@ -385,8 +386,10 @@ button:focus-visible {
   transform: translateY(-3px);
 }
 
-button:hover a::after,
-button:focus-visible a::after {
+.Boutton-1:hover a::after,
+.Boutton-1:focus-visible a::after,
+.Boutton-2:hover a::after,
+.Boutton-2:focus-visible a::after {
   transform: translateX(5px);
 }
 
