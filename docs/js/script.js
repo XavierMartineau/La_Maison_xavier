@@ -13,7 +13,18 @@ function addStartButton() {
   startButton.href = "./jeu_accueil.html";
   startButton.innerHTML =
     '<span aria-hidden="true">←</span><span data-lang="btnDepart">Retour au départ</span>';
-  document.body.prepend(startButton);
+
+  const footer = document.querySelector("footer");
+  if (footer) {
+    const footerInfo = footer.querySelector(".footer_info");
+    if (footerInfo) {
+      footerInfo.before(startButton);
+    } else {
+      footer.append(startButton);
+    }
+  } else {
+    document.body.append(startButton);
+  }
 }
 
 function initializePage() {

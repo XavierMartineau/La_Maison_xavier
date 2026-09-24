@@ -62,14 +62,14 @@ body::after {
   gap: 9px;
   width: fit-content;
   max-width: calc(100% - 28px);
-  margin: 18px auto 0;
-  padding: 9px 14px;
-  border: 1px solid rgba(99, 214, 188, 0.65);
+  margin: 12px auto 0;
+  padding: 7px 11px;
+  border: 1px solid rgba(143, 201, 232, 0.7);
   background: rgba(16, 24, 32, 0.9);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  color: var(--accent-soft);
+  color: #b9e4f7;
   font-family: "Trebuchet MS", sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-decoration: none;
@@ -86,7 +86,7 @@ body::after {
 
 .top-return:hover,
 .top-return:focus-visible {
-  background: var(--accent);
+  background: #8fc9e8;
   color: #101820;
   transform: translateY(-2px);
 }
@@ -97,7 +97,7 @@ body::after {
 }
 
 .top-return:focus-visible {
-  outline: 3px solid rgba(99, 214, 188, 0.35);
+  outline: 3px solid rgba(143, 201, 232, 0.35);
   outline-offset: 4px;
 }
 
