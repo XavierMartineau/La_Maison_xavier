@@ -79,6 +79,34 @@ body::after {
     transform 180ms ease;
 }
 
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  background: rgba(16, 24, 32, 0.74);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+}
+
+.lang-toggle:focus-visible {
+  outline: 3px solid rgba(99, 214, 188, 0.35);
+  outline-offset: 4px;
+}
+
 .top-return span {
   font-size: 1.1rem;
   transition: transform 180ms ease;
@@ -120,6 +148,23 @@ header h1 {
   letter-spacing: 0.04em;
 }
 
+.story-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px auto 0;
+  color: var(--muted);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.story-progress strong {
+  color: var(--accent);
+}
+
 main {
   width: min(1100px, calc(100% - 40px));
   flex: 1;
@@ -129,6 +174,93 @@ main {
   background: var(--surface);
   box-shadow: var(--shadow);
   backdrop-filter: blur(10px);
+}
+
+.game-status {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.session-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.session-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  background: rgba(9, 20, 24, 0.42);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.session-action:hover,
+.session-action:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.session-action:focus-visible {
+  outline: 3px solid rgba(99, 214, 188, 0.35);
+  outline-offset: 3px;
+}
+
+.inventory-box {
+  min-width: 190px;
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.72rem;
+}
+
+.inventory-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inventory-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.inventory-box li {
+  padding: 5px 8px;
+  border: 1px solid rgba(99, 214, 188, 0.45);
+  color: var(--accent-soft);
+}
+
+[data-inventory-empty] {
+  color: var(--muted);
 }
 
 .main-container {
@@ -289,6 +421,66 @@ footer table {
   max-width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
+}
+
+.scene-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.scene-choice {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 13px 22px;
+  border: 1px solid var(--accent);
+  color: var(--accent-soft);
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.scene-choice:hover,
+.scene-choice:focus-visible {
+  background: var(--accent);
+  color: #101820;
+  transform: translateY(-3px);
+}
+
+.scene-choice:focus-visible {
+  outline: 3px solid rgba(99, 214, 188, 0.35);
+  outline-offset: 4px;
+}
+
+.scene-choice.secondary {
+  border-color: var(--choice-two);
+  color: var(--choice-two-soft);
+}
+
+.scene-choice.secondary:hover,
+.scene-choice.secondary:focus-visible {
+  background: var(--choice-two);
+  color: #241512;
+}
+
+.scene-choice.danger {
+  border-color: var(--danger);
+  color: #ffb3a8;
+}
+
+.scene-choice.danger:hover,
+.scene-choice.danger:focus-visible {
+  background: var(--danger);
+  color: #241211;
 }
 
 footer td {
@@ -460,6 +652,18 @@ button:focus-visible {
     padding: 18px;
   }
 
+  .game-status {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-box {
+    min-width: 0;
+    padding-top: 16px;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .main-container {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -482,6 +686,15 @@ button:focus-visible {
 
   button {
     width: min(100%, 300px);
+  }
+
+  .scene-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .scene-choice {
+    width: 100%;
   }
 
   .top-return {

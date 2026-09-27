@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explorez La Maison et faites vos choix."
+    />
+    <title data-lang="accueilTitle">La Maison</title>
+    <link rel="stylesheet" href="../css/jeu.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 data-scene-title>La Maison</h1>
+    </header>
+
+    <main>
+      <section class="game-status" aria-label="État de la partie">
+        <div class="session-controls">
+          <a class="session-action" data-action="continue" hidden href="#">
+            <span data-lang="gameContinue">Continuer</span>
+          </a>
+          <button class="session-action" data-action="new-game" type="button">
+            <span data-lang="gameNew">Nouvelle partie</span>
+          </button>
+        </div>
+
+        <div class="inventory-box">
+          <span class="inventory-label" data-lang="inventoryLabel"
+            >Inventaire</span
+          >
+          <ul data-inventory></ul>
+          <span data-inventory-empty data-lang="inventoryEmpty"
+            >Aucun objet</span
+          >
+        </div>
+      </section>
+
+      <div class="main-container">
+        <div class="image-box">
+          <img data-scene-image src="../images/01.jpg" alt="La Maison" />
+        </div>
+
+        <div class="text-box">
+          <h2 data-scene-intro>Histoire</h2>
+          <p data-scene-text>Une histoire interactive.</p>
+          <p data-scene-extra hidden></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav
+        class="scene-actions"
+        data-scene-choices
+        aria-label="Choix"
+        data-lang-aria="choicesLabel"
+      ></nav>
+      <p class="footer_info" data-lang="footerInfo">
+        © 2024–2026 Projet "La Maison". Réalisé par Xavier Martineau.
+      </p>
+    </footer>
+
+    <script src="../js/scene-data.js"></script>
+    <script src="../js/scene-app.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/translate.js"></script>
+  </body>
+</html>

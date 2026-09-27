@@ -28,24 +28,46 @@ async function loadLang() {
 
 // Applique la traduction à tous les éléments avec data-lang
 function applyLang(langData) {
+  if (!langData) {
+    return;
+  }
+
   document.querySelectorAll("[data-lang]").forEach((el) => {
     const key = el.getAttribute("data-lang");
-    if (langData[key]) {
-      // innerText pour le texte simple, innerHTML si tu veux garder les balises
-      el.innerText = langData[key];
+    if (Object.prototype.hasOwnProperty.call(langData, key)) {
+      el.textContent = langData[key];
     }
   });
+
+  document.querySelectorAll("[data-lang-alt]").forEach((el) => {
+    const key = el.getAttribute("data-lang-alt");
+    if (Object.prototype.hasOwnProperty.call(langData, key)) {
+      el.alt = langData[key];
+    }
+  });
+
+  document.querySelectorAll("[data-lang-aria]").forEach((el) => {
+    const key = el.getAttribute("data-lang-aria");
+    if (Object.prototype.hasOwnProperty.call(langData, key)) {
+      el.setAttribute("aria-label", langData[key]);
+    }
+  });
+
+  document.documentElement.lang = currentLang;
 }
 
-// Gestion du bouton de bascule de langue
-const langToggle = document.getElementById("lang-toggle");
-if (langToggle) {
-  langToggle.addEventListener("click", () => {
-    currentLang = currentLang === "fr" ? "en" : "fr";
-    localStorage.setItem("lang", currentLang);
-    loadLang();
-  });
-}
+// Délégation pour supporter les contrôles ajoutés par script.js.
+document.addEventListener("click", (event) => {
+  if (!event.target.closest("#lang-toggle")) {
+    return;
+  }
+
+  currentLang = currentLang === "fr" ? "en" : "fr";
+  localStorage.setItem("lang", currentLang);
+  loadLang();
+});
+
+window.addEventListener("navigation-ready", loadLang);
 
 // Lance la traduction au chargement
 loadLang();

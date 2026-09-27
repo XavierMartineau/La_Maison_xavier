@@ -73,6 +73,34 @@ body::after {
     transform 180ms ease;
 }
 
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 7px 11px;
+  border: 1px solid var(--line);
+  background: rgba(16, 24, 32, 0.74);
+  color: var(--muted);
+  cursor: pointer;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-soft);
+}
+
+.lang-toggle:focus-visible {
+  outline: 3px solid rgba(244, 184, 96, 0.35);
+  outline-offset: 4px;
+}
+
 .top-return span {
   font-size: 1.1rem;
   transition: transform 180ms ease;
