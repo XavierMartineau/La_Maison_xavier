@@ -148,23 +148,6 @@ header h1 {
   letter-spacing: 0.04em;
 }
 
-.story-progress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 16px auto 0;
-  color: var(--muted);
-  font-family: "Trebuchet MS", sans-serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.story-progress strong {
-  color: var(--accent);
-}
-
 main {
   width: min(1100px, calc(100% - 40px));
   flex: 1;
